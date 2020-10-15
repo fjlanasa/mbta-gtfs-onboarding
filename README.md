@@ -11,4 +11,5 @@ To access the notebook, open this file in a browser:
         http://d4fa0b4a1f9f:8888/?token=b2f4136b16dc804eb4ef58688bfc07434dabc8e6c6625dfd
      or http://127.0.0.1:8888/?token=b2f4136b16dc804eb4ef58688bfc07434dabc8e6c6625dfd
 ```
-4) Enjoy 
+4) Open file `GTFS Onboarding.ipynb`
+5) Enjoy 
