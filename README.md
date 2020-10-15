@@ -1,6 +1,6 @@
 # mbta-gtfs-onboarding
 
-View on [Binder](https://mybinder.org/v2/gh/fjlanasa/mbta-gtfs-onboarding/main)
+View on [Binder](https://mybinder.org/v2/gh/fjlanasa/mbta-gtfs-onboarding/main?urlpath=lab)
 
 To use locally:
 1) [Install Docker](https://docs.docker.com/get-docker/) and start it up
