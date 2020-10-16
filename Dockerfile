@@ -3,13 +3,13 @@ FROM $BASE_CONTAINER
 
 LABEL maintainer="Frank LaNasa <fjlanasa@gmail.com>"
 
-RUN conda install -c conda-forge ipython-sql
+RUN conda install -c conda-forge ipython-sql=0.3.9
 
-RUN conda install -c conda-forge pandas
+RUN conda install -c conda-forge pandas=1.1.3
 
-RUN conda install -c conda-forge jupyter_contrib_nbextensions
+RUN conda install -c conda-forge jupyter_contrib_nbextensions=0.5.1
 
-RUN jupyter labextension install @jupyterlab/toc
+RUN jupyter labextension install @jupyterlab/toc@4.0.0
 
 COPY ["db.py", "./"]
 
