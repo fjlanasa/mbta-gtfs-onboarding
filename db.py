@@ -9,6 +9,9 @@ import csv
 
 EXAMPLE_FEED_URL = "https://cdn.mbtace.com/archive/20201002.zip"
 
+DATA_TYPES = {
+    "stop_sequence": "int"
+}
 
 def load_db(gtfs_feed_zip_url):
     if os.path.exists("feed.db"):
@@ -24,7 +27,7 @@ def load_db(gtfs_feed_zip_url):
         with open(file) as csv_file:
             csvreader = csv.DictReader(csv_file)
             keys = csvreader.fieldnames
-            fields = ", ".join([(key + " text") for key in keys])
+            fields = ", ".join([(key + " " + DATA_TYPES.get(key, "text")) for key in keys])
             c.execute(f"CREATE TABLE {table} ({fields})")
             values = [[v for v in row.values()] for row in csvreader]
             c.executemany(
